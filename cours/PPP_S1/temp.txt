@@ -1,0 +1,39 @@
+#copyright, #contact{
+	position: absolute;
+	text-align: center;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+#copyright{
+	position: fixed;
+	right: 1px;
+}
+
+#contact{
+	position: fixed;
+	left: 1px;
+}
+
+
+#contact{
+	background-color:yellow;	
+}
+
+#copyright{
+	background-color:#00ff1a; 
+}
+
+#contact, #copyright{
+	
+}
+
+footer + #contact{
+	position:fixed;
+	right:0;
+}
+
+footer + #copyright{
+	position:fixed;
+	left: 0;
+}

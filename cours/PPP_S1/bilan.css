@@ -1,0 +1,46 @@
+/* 
+----------------------------
+Mise en forme du table de notes 
+----------------------------
+*/
+
+table{
+	border-collapse: collapse;
+	margin: 5px;
+}
+
+th{
+	border: 1px solid black;
+}
+
+/* 
+----------------------------
+Mise en forme du texte sur la droite
+----------------------------
+*/
+
+.txt{
+	padding: 0px 10px 0px 10px;
+}
+.developpement{
+	display: flex;
+    justify-content: center;
+    align-items: center;	
+}
+
+p{
+	margin:5px;
+}
+
+/* 
+----------------------------
+media querry pour les telephone (en dessous de 700px --> pour les petits ecrans ou pour les moitier d'ecran)
+----------------------------
+*/
+
+@media screen and (max-width: 700px) {
+	.contenu{
+		display:flex;
+		flex-direction: column;
+	}
+}

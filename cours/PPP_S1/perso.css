@@ -1,0 +1,36 @@
+table{
+	border-collapse: collapse;
+	margin: 5px;
+}
+
+.tab{
+	padding:2%;
+}
+
+tbody th{
+	border: 1px solid black;
+}
+
+.contenu{
+	display: flex;
+	flex-direction: column;
+}
+
+#graph{
+	width: 50em;
+	height: 28em;
+	padding-top: 50px;
+	margin-bottom: 10px;
+}
+
+#rond{
+	width: 35em;
+	height:35em;
+	margin-top:20px;
+}
+
+hr{
+	height: 5px;
+	background-color:#00314a;
+	color: #00314a;
+}

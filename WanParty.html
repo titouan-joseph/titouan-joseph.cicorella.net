@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+	  <title>WanParty | Portfolio de Titouan-Joseph REVOL</title>
+	  <meta name="author" content="Titouan-Joseph REVOL" />
+	  <link rel="icon" href="img/favicon.png" />
+	  <link rel="stylesheet" href="style.css">
+	  <script src="script.js"></script>
+	  <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1A51tgtTiyj7FhxL4TTh9hT5tBsEtFagM%26export%3Ddownload"></script>
+	  	  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51201482-3"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-51201482-3');
+		</script>
+	</head>
+	
+	<body>
+	
+		<div class="header"><h2>Projet WanParty</h2></div>
+		<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+		<label for="openSidebarMenu" class="sidebarIconToggle">
+			<div class="spinner diagonal part-1"></div>
+			<div class="spinner horizontal"></div>
+			<div class="spinner diagonal part-2"></div>
+		</label>
+		
+		<div id="sidebarMenu">
+		
+			<ul class="sidebarMenuInner">
+			
+			  <li><a href="https://www.titouan-joseph.revol.site/" >Mon portfolio </a>
+					<span><a class="span" href="presentation.html">Présentation</a></span>
+			  </li>
+			  <li><a href="projetWeb.html" >Projet Web</a>
+					<span> <a class="span" href="cours">Site de présentation</a></span>
+					<span> <a class="span" href="https://www.transportlc.fr">Transport LC</a></span>
+				</li>
+			  <li><a href="WanParty.html" >Projet WanParty</a>
+				<span><a class="span" href="http://wanparty.neticien.net">Site de la WanParty</a></span>
+			  </li>
+			  <li><a href="gallery.html">Galerie photo</a></li>
+			  <li><a href="pihole.html">Projet Pi-hole</a></li>
+			
+			</ul>
+			
+		</div>
+		
+		<div class="contenu">
+		
+			<p>
+				Dans mon cursus de DUT Réseaux et Télécommunications, j'ai choisi de travailler sur la Wan Party pour mon projet universitaire. 
+				</br>
+				Mais qu'est-ce que la Wan Party ? 
+				</br>
+				La Wan Party est un tournoi de jeux vidéo, comme les LAN ou des joueurs se retrouvent pour s'affronter sur un jeu vidéo. La différence est que la Wan Party 
+				regroupe plusieurs IUT R&amp;T de France et fait concourir les joueurs des IUT entre eux. (Pour plus d'info visitez le 
+				<a target="_blank" href="http://wan.neticien.fr">site de la WAN</a>)
+				</br>
+				</br>
+			
+				Pour fonctionner la Wan Party est basée sur une certaine architecture composée :
+				<ul>
+					<li>D'un VPN</li>
+					<li>D'un DHCP</li>
+					<li>D'un DNS</li>
+					<li>D'un annuaire LDAP</li>
+					<li>D'un portail captif</li>
+					<li>D'une machine de cache pour les téléchargements</li>
+					<li>De serveurs de jeux</li>
+				</ul>
+				
+				Le VPN sert à interconnecter tous les IUT pour être sur le même réseau afin de jouer comme dans une LAN. Le DHCP et le DNS sont des éléments primordiaux pour que les joueurs 
+				puissent se connecter à internet et à notre réseau. L'annuaire LDAP et le portail captif sont présents pour effectuer un suivi des personnes authentifiées sur le réseau. Et aussi permettre
+				la gestion des joueurs et des équipes pour le classement. La machine de cache sert à éviter que la bande passante de l'IUT ne chute lors de mise à jour et ainsi faire en sorte
+				que le tournoi se passe sans problème de latence. Les serveurs de jeux sont indispensables pour ce type d'événement.
+				
+				</br> 
+				</br> 
+				Cette architecture peut se représenter à l'aide du schéma suivant:
+				<div class="mxgraph" style="max-width:50%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1A51tgtTiyj7FhxL4TTh9hT5tBsEtFagM&amp;export=download&quot;}"></div>
+			</p>
+
+			<p>
+				Personnellement je me suis occupé de rédiger un document pour la mise en place de la machine de cache. Cette machine est réalisée sous Ubuntu avec Docker et s'appelle Steam-cache.
+				Elle permet de mettre en cache les jeux de Steam, de Blizzard, de RiotGames et d'autres. Si vous voulez plus d'informations vous pouvez vous rendre sur le
+				<a href="https://github.com/steamcache/generic" >GitHub du projet</a>, mais aussi sur mon <a href="tuto_cache.pdf">document</a>
+			</p>
+			
+			<p>
+				Je me suis aussi occupé de réaliser l'affiche et la bananière publicitaire permettant aux joueurs de s'inscrire. Nous avons choisi de représenter différents mondes dans
+				l'univers. C'est une métaphore des différents univers dans lesquels nous emmène les jeux vidéo. Vous pouvez les voir ci-dessous:
+			</p>
+
+			
+			<a href="img/afficheWANpleinformat.png" > <img src="img/afficheWAN.png" alt="affiche de la Wan Party"/> </a>
+			</br>
+			<a href="img/banierepleinformat.png" > <img src="img/baniere.png" alt="bananière de la Wan Party"/> </a>
+			
+			<p>
+				Nous avons aussi dû présenter notre porjet pour le cours d'anglais. Vous pouvez voir ma video de présentation ci-dessous :
+			</p>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/cUtd8XHA9yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<p>
+				Maintenant que vous avez découvert les grandes lignes du projet, vous pouvez lire (ou même jeter un coup d'œil) notre <a href="memoire.pdf">mémoire de projet</a>
+			</p>
+			
+		</div>
+	
+		
+	</body>
+	
+</html>

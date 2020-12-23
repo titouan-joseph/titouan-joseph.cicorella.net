@@ -1,0 +1,201 @@
+/* 
+----------------------------
+toute la page, mise en place de la police et des bordure
+----------------------------
+*/
+
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family:Courier New ;
+}
+
+/* 
+----------------------------
+bordure sur le nav, fioter et header 
+----------------------------
+*/
+
+header, nav, footer{
+	color: #f2f2f2;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid white;
+}
+
+/* 
+----------------------------
+header
+----------------------------
+*/
+
+header {
+	background-image: url(img/background_header.jpg);
+}
+
+/* 
+----------------------------
+nav
+----------------------------
+*/
+
+nav{
+	background-image: url(img/background_nav.jpg) ; /*j'ai mis l'image en background pour me simplifier la superposition avec mon nom */
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	text-align: center;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+nav  li.page_active{
+	background-color: rgba(255, 99, 71, 0.5) ;
+	border-radius: 20px;
+}
+
+
+/* 
+----------------------------
+footer
+----------------------------
+*/
+
+footer{
+	background-image: url(img/background_footer.jpg) ;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact{
+	display:flex;
+	text-align: right;
+}
+
+#source{
+	display:flex;
+	text-align: center;
+}
+
+/* 
+----------------------------
+mise en forme des liens
+----------------------------
+*/
+
+a:link{
+	color:#f2f2f2;
+}
+
+a:hover{
+	color:blue;
+}
+
+a:visited{
+	color:#d9d9d9;
+}
+
+a:active{
+	color:red;
+}
+
+/* 
+----------------------------
+section entre le header et le footer, contien le nav et le contenun du site
+----------------------------
+*/
+
+.corps{
+  display: flex;
+  flex : 1 1 auto;
+}
+
+/* 
+----------------------------
+mise en page de la photo lors de la construction du site
+----------------------------
+*/
+
+.construction{
+	text-align: center;
+	width:100%;
+	background-color: #f2f2f2;
+}
+
+/* 
+----------------------------
+contenu du site
+----------------------------
+*/
+
+.contenu{
+	text-align: center;
+	margin: 3px;
+	border: 5px solid #00314a;
+	border-radius: 10px;
+	width:100%;
+	background-color: #f2f2f2;
+	display:flex;
+}
+
+/* 
+----------------------------
+media querry pour les telephone (en dessous de 550px)
+----------------------------
+*/
+
+@media screen and (max-width: 550px) {
+	.corps{
+		display:flex;
+		flex-direction: column;
+	}
+	
+	
+	nav ul{
+		display:flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	
+	nav ul li{
+		display: inline;
+	}
+	
+	nav ul li a{
+		padding-right:6px;
+	}
+}
+
+/* 
+----------------------------
+infographie
+----------------------------
+*/
+
+.infographie{
+	width:100%;
+}
+
+/* 
+----------------------------
+blason
+----------------------------
+*/
+
+.blason{
+	box-shadow: 2px 2px 10px black;
+	border-radius: 10px;
+	text-align: left;
+	margin:5px;
+	padding:5px;
+}
+
+.blason_img{
+	width:100%;
+}
