@@ -1,6 +1,7 @@
-# titouan-joseph.cicorella.net
+# titouan-joseph.revol.site
 
-Source code of my website  
+Source code of my website [check it](http://titouan-joseph.cicorella.net)
+
 Auto deploy on swarm cluster :
  - On push : github workflow build a docker image and push to a private registry
  - On swarm manager, every minute, the cluster check new image from the registry (technically with a cron task and `docker service update --image ` command )
@@ -18,4 +19,3 @@ docker service create \
 --network traefik-public \
 127.0.0.1:5000/portfolio:latest
 ```
-
