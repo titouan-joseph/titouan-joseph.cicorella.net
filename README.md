@@ -1,4 +1,4 @@
-# titouan-joseph.revol.site
+# titouan-joseph.cicorella.net
 
 Source code of my website [check it](http://titouan-joseph.cicorella.net)
 
