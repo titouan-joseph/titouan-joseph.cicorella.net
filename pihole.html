@@ -2,8 +2,8 @@
 <html lang="fr">
 
 	<head>
-	  <title>Projet Pi-hole| Portfolio de Titouan-Joseph REVOL</title>
-	  <meta name="author" content="Titouan-Joseph REVOL" />
+	  <title>Projet Pi-hole| Portfolio de Titouan-Joseph CICORELLA</title>
+	  <meta name="author" content="Titouan-Joseph CICORELLA" />
 	  <link rel="icon" href="img/favicon.png" />
 	  <link rel="stylesheet" href="style.css">
 	  <script src="script.js"></script>
@@ -32,11 +32,11 @@
 		
 			<ul class="sidebarMenuInner">
 			
-			  <li><a href="https://www.titouan-joseph.revol.site/" >Mon portfolio </a>
-					<span><a class="span" href="presentation.html">Présentation</a></span>
+			  <li><a href="https://www.titouan-joseph.cicorella.net/" >Mon portfolio </a>
+					<span><a class="span" href="presentation.html">Prï¿½sentation</a></span>
 			  </li>
 			  <li><a href="projetWeb.html" >Projet Web</a>
-					<span> <a class="span" href="cours">Site de présentation</a></span>
+					<span> <a class="span" href="cours">Site de prï¿½sentation</a></span>
 					<span> <a class="span" href="https://www.transportlc.fr">Transport LC</a></span>
 				</li>
 			  <li><a href="WanParty.html" >Projet WanParty</a>
@@ -53,46 +53,46 @@
 			
 			<p>
 				Pour commencer, qu'est-ce que Pi-hole ? Et pourquoi l'installer ? <br/>
-				Pi-hole est un bloqueur de publicités, vous allez me dire que vous avez déjà ad Block et que vous n'avez pas besoin d'un autre bloqueur de publicités.
-				En effet, vous n'avez pas tort, cependant il faut installer ad Block sur toutes vos machines (PC, Smartphone, Tablette...). Pi-hole quant à lui a besoin 
-				d’être installé qu'une seule et unique fois, pour toutes vos machines sur votre réseau. Donc plus besoin de se prendre la tête avec une extension sur votre navigateur avec Pi-hole. <br/>
+				Pi-hole est un bloqueur de publicitï¿½s, vous allez me dire que vous avez dï¿½jï¿½ ad Block et que vous n'avez pas besoin d'un autre bloqueur de publicitï¿½s.
+				En effet, vous n'avez pas tort, cependant il faut installer ad Block sur toutes vos machines (PC, Smartphone, Tablette...). Pi-hole quant ï¿½ lui a besoin 
+				dï¿½ï¿½tre installï¿½ qu'une seule et unique fois, pour toutes vos machines sur votre rï¿½seau. Donc plus besoin de se prendre la tï¿½te avec une extension sur votre navigateur avec Pi-hole. <br/>
 				Mais comment cela fonctionne-t-il ? <br/>
-				Tout simplement grâce aux requêtes DNS, vous allez remplacer votre serveur DNS par Pi-hole. Une fois installé, vous renseignerez à l'aide de l'interface web des listes de nom de 
-				domaines à bloquer. Et comme par magie toutes les pubs disparaissent ! :) <br/>
+				Tout simplement grï¿½ce aux requï¿½tes DNS, vous allez remplacer votre serveur DNS par Pi-hole. Une fois installï¿½, vous renseignerez ï¿½ l'aide de l'interface web des listes de nom de 
+				domaines ï¿½ bloquer. Et comme par magie toutes les pubs disparaissent ! :) <br/>
 				Je vous laisse consulter la <a target="_bank" href="https://pi-hole.net/" >page</a> du projet pour plus d'information ;) 
 			</p>
 			
 			<p>
 				De quoi a-t-on besoin ? <br/>
-				Si vous êtes allés visiter la <a target="_bank" href="https://pi-hole.net/" >page de Pi-hole</a> vous avez pu constater qu'il est possible d'installer ce
-				bloqueur de publicités de différentes manières. Sur un Docker, sur une Raspberry Pi, ou encore sur des OS Linux. <br/>
-				Personnellement, j'ai choisi de l'installer sur une Raspberry Pi. Tout simplement parce que c'est peu couteux et que l'on peut l'alimenter à l'aide d'une prise USB. Cette prise USB
-				peut très bien se trouver derrière la BOX, il n'y a donc pas d'alimentation supplémentaire. De plus une Raspberry Pi ne consomme pas beaucoup. <br/>
-				Finalement, c'est une solution peu couteuse et qui ne fera pas exploser la consommation électrique.
+				Si vous ï¿½tes allï¿½s visiter la <a target="_bank" href="https://pi-hole.net/" >page de Pi-hole</a> vous avez pu constater qu'il est possible d'installer ce
+				bloqueur de publicitï¿½s de diffï¿½rentes maniï¿½res. Sur un Docker, sur une Raspberry Pi, ou encore sur des OS Linux. <br/>
+				Personnellement, j'ai choisi de l'installer sur une Raspberry Pi. Tout simplement parce que c'est peu couteux et que l'on peut l'alimenter ï¿½ l'aide d'une prise USB. Cette prise USB
+				peut trï¿½s bien se trouver derriï¿½re la BOX, il n'y a donc pas d'alimentation supplï¿½mentaire. De plus une Raspberry Pi ne consomme pas beaucoup. <br/>
+				Finalement, c'est une solution peu couteuse et qui ne fera pas exploser la consommation ï¿½lectrique.
 			</p>
 			
 			<p>
-				Passons maintenant à l'installation, il faut commencer par mettre à jour les paquets et la liste des paquets. Il faut donc taper la commande :
+				Passons maintenant ï¿½ l'installation, il faut commencer par mettre ï¿½ jour les paquets et la liste des paquets. Il faut donc taper la commande :
 			</p>
 			
 			<pre class="code">$ apt-get update && apt-get upgrade</pre>
 			
 			<p>
-				Ensuite, nous allons installer curl pour pouvoir télécharger Pi-hole. /!\ Il faut faire attention avec curl et ne pas installer n'importe quoi avec. On exécute donc :
+				Ensuite, nous allons installer curl pour pouvoir tï¿½lï¿½charger Pi-hole. /!\ Il faut faire attention avec curl et ne pas installer n'importe quoi avec. On exï¿½cute donc :
 			</p>
 			
 			<pre class="code">$ apt install curl</pre>
 			
 			<p> 
-				Une fois Curl installé, nous pouvons installer Pi-hole. Pour cela, il suffit d'exécuter la ligne suivante :
+				Une fois Curl installï¿½, nous pouvons installer Pi-hole. Pour cela, il suffit d'exï¿½cuter la ligne suivante :
 			</p>
 			
 			<pre class="code" >$ curl -sSL https://install.pi-hole.net | bash </pre>
 			
 			<p>
-				L'assistant d'installation va se lancer tout seul. Vous allez pouvoir dire "ok" aux trois informations qui vont suivre. La première indique que vous allez installer 
-				et faire de votre machine un bloqueur de publicités. Le deuxième vous propose de faire un don au <a href="https://pi-hole.net/donate">projet</a>. Et enfin la dernière
-				vous informe qu'il est nécessaire de mettre un adresse IP statique sur votre machine pour que pi-hole fonctionne correctement.
+				L'assistant d'installation va se lancer tout seul. Vous allez pouvoir dire "ok" aux trois informations qui vont suivre. La premiï¿½re indique que vous allez installer 
+				et faire de votre machine un bloqueur de publicitï¿½s. Le deuxiï¿½me vous propose de faire un don au <a href="https://pi-hole.net/donate">projet</a>. Et enfin la derniï¿½re
+				vous informe qu'il est nï¿½cessaire de mettre un adresse IP statique sur votre machine pour que pi-hole fonctionne correctement.
 			</p>
 			
 			<div>
@@ -102,39 +102,39 @@
 			</div>
 			
 			<p>
-				Par la suite, vous pourrez choisir le serveur DNS que vous allez utiliser pour faire vos requêtes. Ensuite vous pourrez le changer et/ou en ajouter d'autres.
-				Vous avez le choix entre celui de Google, le célèbre 8.8.8.8 ou encore celui de Cloudflare qui se veut respectueux de la vie privé (1.1.1.1). Mais vous pouvez très bien en 
-				utiliser d'autres, avec le choix "custom", celui de votre opérateur, votre propre DNS etc.
+				Par la suite, vous pourrez choisir le serveur DNS que vous allez utiliser pour faire vos requï¿½tes. Ensuite vous pourrez le changer et/ou en ajouter d'autres.
+				Vous avez le choix entre celui de Google, le cï¿½lï¿½bre 8.8.8.8 ou encore celui de Cloudflare qui se veut respectueux de la vie privï¿½ (1.1.1.1). Mais vous pouvez trï¿½s bien en 
+				utiliser d'autres, avec le choix "custom", celui de votre opï¿½rateur, votre propre DNS etc.
 			</p>
 			
-			<img src="img/pihole/4.png" alt="sélection du serveur DNS" />
+			<img src="img/pihole/4.png" alt="sï¿½lection du serveur DNS" />
 			
 			<p>
-				Les choix suivants, sont les listes de nom de domaines que vous allez bloquer. Vous pouvez toutes les laisser cochées. Comme pour le DNS, vous allez pouvoir en ajouter 
-				d'autres et les supprimer plus tard. Vous pourrez aussi ajouter des noms de domaines dans une Whitelist pour qu'ils ne soient plus bloqués malgré leurs présences dans les listes. 
-				Après, vous pourrez choisir de bloquer que les adresses IPv4 ou que les adresses IPv6. Je vous conseille de laisser les deux.
+				Les choix suivants, sont les listes de nom de domaines que vous allez bloquer. Vous pouvez toutes les laisser cochï¿½es. Comme pour le DNS, vous allez pouvoir en ajouter 
+				d'autres et les supprimer plus tard. Vous pourrez aussi ajouter des noms de domaines dans une Whitelist pour qu'ils ne soient plus bloquï¿½s malgrï¿½ leurs prï¿½sences dans les listes. 
+				Aprï¿½s, vous pourrez choisir de bloquer que les adresses IPv4 ou que les adresses IPv6. Je vous conseille de laisser les deux.
 			</p>
 			
 			<div>
-				<img src="img/pihole/5.png" alt="sélection des listes de noms" />
-				<img src="img/pihole/6.png" alt="sélection des protocoles" />
+				<img src="img/pihole/5.png" alt="sï¿½lection des listes de noms" />
+				<img src="img/pihole/6.png" alt="sï¿½lection des protocoles" />
 			</div>
 			
 			<p>
 				Maintenant, pi-hole va nous proposer d'affecter une adresse IP statique ou non. Si celle-ci vous convient, choisir "oui" sinon suivez les instructions pour changer l'adresse.
-				L'assistant de pi-hole a tout prévu :) <br/>
-				Il vous prévient même que l'adresse que vous acceptez est une adresse délivrée par un DHCP et qu'il peut y avoir des conflits d'adresses. <br />
-				Par la suite, comme l'adresse IPv6 est supportée il nous indique l'adresse IPv6 utilisée pour bloquer la pub.
+				L'assistant de pi-hole a tout prï¿½vu :) <br/>
+				Il vous prï¿½vient mï¿½me que l'adresse que vous acceptez est une adresse dï¿½livrï¿½e par un DHCP et qu'il peut y avoir des conflits d'adresses. <br />
+				Par la suite, comme l'adresse IPv6 est supportï¿½e il nous indique l'adresse IPv6 utilisï¿½e pour bloquer la pub.
 			</p>
 			
 			<div>
 				<img src="img/pihole/7.png" alt="accepter l'adresse IP statique" />
-				<img src="img/pihole/8.png" alt="prévention de conflit d'IP" />
+				<img src="img/pihole/8.png" alt="prï¿½vention de conflit d'IP" />
 			</div>
 			
 			<p>
-				Nous arrivons au moment où l'assistant nous demande d'installer l'interface web, je vous conseille de l'installer, vous trouverez toutes les données statistiques dessus, vous pourrez tout 
-				reparamétrer. Pour avoir les statistiques, il faut bien activer les logs.
+				Nous arrivons au moment oï¿½ l'assistant nous demande d'installer l'interface web, je vous conseille de l'installer, vous trouverez toutes les donnï¿½es statistiques dessus, vous pourrez tout 
+				reparamï¿½trer. Pour avoir les statistiques, il faut bien activer les logs.
 			</p>
 			
 			<div>
@@ -144,18 +144,18 @@
 			</div>
 			
 			<p>
-				Pi-hole est maintenant correctement installé, vous trouverez un récapitulatif de toutes les informations pour vous connecter à l'interface web. De plus il nous demande de bien configurer 
+				Pi-hole est maintenant correctement installï¿½, vous trouverez un rï¿½capitulatif de toutes les informations pour vous connecter ï¿½ l'interface web. De plus il nous demande de bien configurer 
 				nos appareils pour qu'ils utilisent pi-hole comme DNS
 			</p>
 			
-			<img src="img/pihole/12.png" alt="Récapitulatif de l'installation" />
+			<img src="img/pihole/12.png" alt="Rï¿½capitulatif de l'installation" />
 			
 			<p>
-				Avant de continuer, il est toujours possible de changer d'adresse IP fixe. Pourquoi nous utilisons une adresse fixe ? c'est pour éviter que le DHCP nous donne une autre adresse.
-				Et que notre bloqueur de publicités devienne inutile à cause d'un conflit d'adresse. <br/>
-				Pour ce faire, soit nous fixons à l'aide de notre DHCP une
-				adresse fixe correspondant à l'adresse MAC de notre Raspberry Pi. Soit nous configurons directement un adresse IP dans les fichiers de configuration du réseau de notre Raspberry Pi<br/>
-				Nous allons voir comment affecter une adresse IP directement dans les fichiers de configuration. Pour ce faire, à l'aide de votre éditeur de texte éditez le fichier suivant 
+				Avant de continuer, il est toujours possible de changer d'adresse IP fixe. Pourquoi nous utilisons une adresse fixe ? c'est pour ï¿½viter que le DHCP nous donne une autre adresse.
+				Et que notre bloqueur de publicitï¿½s devienne inutile ï¿½ cause d'un conflit d'adresse. <br/>
+				Pour ce faire, soit nous fixons ï¿½ l'aide de notre DHCP une
+				adresse fixe correspondant ï¿½ l'adresse MAC de notre Raspberry Pi. Soit nous configurons directement un adresse IP dans les fichiers de configuration du rï¿½seau de notre Raspberry Pi<br/>
+				Nous allons voir comment affecter une adresse IP directement dans les fichiers de configuration. Pour ce faire, ï¿½ l'aide de votre ï¿½diteur de texte ï¿½ditez le fichier suivant 
 				<em>/etc/dhcpcd.conf</em> comme ceci pour l'utilisation avec l'interface Wifi :
 			</p>
 			
@@ -166,46 +166,46 @@ interface wlan0
 	static domain_name_servers=127.0.0.1</pre>
 			
 			<p>
-				static ip_address est l'adresse que vous avez choisi pour votre bloquer de publicités <br/>
+				static ip_address est l'adresse que vous avez choisi pour votre bloquer de publicitï¿½s <br/>
 				static routers est l'adresse de votre routeur <br/>
-				et static domain_name_servers est votre serveur DNS, ici 127.0.0.1 car nous sommes en train de créer un serveur DNS. Il faut donc qu'il s'appelle lui-même pour faire des requêtes 
+				et static domain_name_servers est votre serveur DNS, ici 127.0.0.1 car nous sommes en train de crï¿½er un serveur DNS. Il faut donc qu'il s'appelle lui-mï¿½me pour faire des requï¿½tes 
 				dans sa zone. <br/>				
-				Une fois changé, pour que notre Raspberry Pi prenne les paramètres souhaités, il faut redémarrer l'interface. Il faut taper la commande: <br/>
+				Une fois changï¿½, pour que notre Raspberry Pi prenne les paramï¿½tres souhaitï¿½s, il faut redï¿½marrer l'interface. Il faut taper la commande: <br/>
 			</p>
 			
 			<pre class="code">$ ifdown wlan0</pre> 
 			
 			<p>
-				Pour l'éteindre, puis l'allumer pour que celle-ci puisse prendre nos paramètres indiqués ci-dessus. Avec cette commande : 
+				Pour l'ï¿½teindre, puis l'allumer pour que celle-ci puisse prendre nos paramï¿½tres indiquï¿½s ci-dessus. Avec cette commande : 
 			</p>
 			
 			<pre class="code">$ ifup wlan0</pre>
 			
 			<p>
-				Cette parenthèse finie, nous allons configurer notre DHCP pour qu'il donne l'adresse de notre pi-hole comme serveur DNS. Chez moi j'utilise une Freebox et un routeur wifi TP Link.
+				Cette parenthï¿½se finie, nous allons configurer notre DHCP pour qu'il donne l'adresse de notre pi-hole comme serveur DNS. Chez moi j'utilise une Freebox et un routeur wifi TP Link.
 				Je vais vous montrer comment faire dans un premier temps avec une Freebox. Pour commencer, connectez-vous sur l'interface de votre Freebox, soit avec son adresse IP, dans mon cas
 				<a target="_bank" href="http://192.168.1.254" >192.168.1.254</a> ou avec <a target="_bank" href="http://mafreebox.freebox.fr">http://mafreebox.freebox.fr</a> <br/>
-				Une fois connecté, vous allez aller dans les paramètres de la Freebox puis dans le mode avancé, aller dans DHCP et modifier la ligne "serveur DNS 1" avec l'adresse IP de votre 
-				Pi-hole. Donc dans mon cas 192.168.15 , vous remarquerez qu'il y a d'autres adresses dans les champs suivants, c'est en cas où ma Raspberry Pi crache.
+				Une fois connectï¿½, vous allez aller dans les paramï¿½tres de la Freebox puis dans le mode avancï¿½, aller dans DHCP et modifier la ligne "serveur DNS 1" avec l'adresse IP de votre 
+				Pi-hole. Donc dans mon cas 192.168.15 , vous remarquerez qu'il y a d'autres adresses dans les champs suivants, c'est en cas oï¿½ ma Raspberry Pi crache.
 			</p>
 			
 			<div>
 				<img src="img/pihole/13.png" alt="Interface web de la Freebox" />
-				<img src="img/pihole/14.png" alt=" Paramètre avancé de la Freebox" />
-				<img src="img/pihole/15.png" alt="Paramètre du DHCP de la Freebox" />
+				<img src="img/pihole/14.png" alt=" Paramï¿½tre avancï¿½ de la Freebox" />
+				<img src="img/pihole/15.png" alt="Paramï¿½tre du DHCP de la Freebox" />
 			</div>
 			
 			<p>
-				Pour le cas du routeur TP Link, comme pour la Freebox, il faut commencer par se connecter à l'interface d'administration. A l'aide de son adresse IP, puis aller dans DHCP dans 
-				le menu à gauche. Puis dans DHCP Settings et indiquer comme paramètres l'adresse de notre Pi-hole dans le champs "Primary DNS"
+				Pour le cas du routeur TP Link, comme pour la Freebox, il faut commencer par se connecter ï¿½ l'interface d'administration. A l'aide de son adresse IP, puis aller dans DHCP dans 
+				le menu ï¿½ gauche. Puis dans DHCP Settings et indiquer comme paramï¿½tres l'adresse de notre Pi-hole dans le champs "Primary DNS"
 			</p>
 			
 			<img src="img/pihole/16.png" alt="Interface du routeur TP Link" />
 			
 			<p>
-				Nous avons fini l'installation de notre pi-hole, nous pouvons nous connecter à son interface avec son IP suivi de /admin, dans mon cas 192.168.1.15/admin ou avec le nom de domaine 
+				Nous avons fini l'installation de notre pi-hole, nous pouvons nous connecter ï¿½ son interface avec son IP suivi de /admin, dans mon cas 192.168.1.15/admin ou avec le nom de domaine 
 				<a target="_bank" href="http://pi.hole">pi.hole</a> <br/>
-				Vous allez arriver sur une interface avec quelques données des dernières 24h, qui ressemble à celles-ci :
+				Vous allez arriver sur une interface avec quelques donnï¿½es des derniï¿½res 24h, qui ressemble ï¿½ celles-ci :
 			</p>
 			
 			<div>
@@ -214,36 +214,36 @@ interface wlan0
 			</div>
 			
 			<p> 
-				Vous pouvez vous connecter à l'aide du mot de passe donné à la fin de l'installation. Pour changer le mot de passe il faut taper sur un terminal en root de votre Raspberry Pi :
+				Vous pouvez vous connecter ï¿½ l'aide du mot de passe donnï¿½ ï¿½ la fin de l'installation. Pour changer le mot de passe il faut taper sur un terminal en root de votre Raspberry Pi :
 			</p>
 			
 			<pre class="code">$ pihole -a -p</pre>
 			
 			<p>
-				Cette commande va vous inviter à changer votre mot de passe, vous pouvez donc le faire après la fin de l'installation et définir un mot de passe plus facile à mémoriser. <br/>
-				Une fois connecté, vous avez accès à un panel d'informations plus grand, comme le type de query, de quel serveur provient les requêtes, le top des domaines bloqué et autorisé. 
-				Vous pouvez aussi ajouter des domaines dans la Whitelist et dans la Blacklist, interrompre le service pendant une durée déterminée etc. Nous allons voir par la suite
+				Cette commande va vous inviter ï¿½ changer votre mot de passe, vous pouvez donc le faire aprï¿½s la fin de l'installation et dï¿½finir un mot de passe plus facile ï¿½ mï¿½moriser. <br/>
+				Une fois connectï¿½, vous avez accï¿½s ï¿½ un panel d'informations plus grand, comme le type de query, de quel serveur provient les requï¿½tes, le top des domaines bloquï¿½ et autorisï¿½. 
+				Vous pouvez aussi ajouter des domaines dans la Whitelist et dans la Blacklist, interrompre le service pendant une durï¿½e dï¿½terminï¿½e etc. Nous allons voir par la suite
 				comment ajouter une liste et comment ajouter un domaine dans la Whitelist<br/>
-				Voici quelques captures d'écrans des graphiques disponibles : 
+				Voici quelques captures d'ï¿½crans des graphiques disponibles : 
 			</p>
 			
 			<img src="img/pihole/19.png" alt="Graphique pi-hole" />
 			
 			<p>
 				Nous allons voir comment ajouter une liste qui va bloquer des noms de domaines. Dans notre exemple nous allons bloquer les contenus pornographiques. Il faut d'abord trouver une liste, 
-				une petite recherche sur Google et vous allez en trouver très rapidement. Dans mon cas je vais utiliser
+				une petite recherche sur Google et vous allez en trouver trï¿½s rapidement. Dans mon cas je vais utiliser
 				<a target="_bank" href="https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list">cette liste </a>. <br/>
 				Il faut aller dans settings puis dans Blocklist et coller l'url dans la barre en bas, enfin on clique sur "save and update" pour appliquer les changements. Une fois que tout est
-				mis à jour, si vous allez sur l'un des sites de la liste, un page "impossible de trouver l'adresse IP du serveur" va s'afficher. En effet, pi-hole renvoie l'adresse 0.0.0.0 comme 
-				adresse des domaines bloquer. Cette adresse IP ne correspondant à aucun serveur, le navigateur ne peut afficher de pages.
+				mis ï¿½ jour, si vous allez sur l'un des sites de la liste, un page "impossible de trouver l'adresse IP du serveur" va s'afficher. En effet, pi-hole renvoie l'adresse 0.0.0.0 comme 
+				adresse des domaines bloquer. Cette adresse IP ne correspondant ï¿½ aucun serveur, le navigateur ne peut afficher de pages.
 			</p>
 			
-			<img src="img/pihole/20.png" alt="paramètres pi-hole, ajouter une liste" />
+			<img src="img/pihole/20.png" alt="paramï¿½tres pi-hole, ajouter une liste" />
 			
 			<p>
 				Je vais maintenant vous montrer comment ajouter un nom de domaine dans la Whitelist. En effet, utilisant Google Analytics je ne pouvais plus m'y rendre avec pi-hole d'installer.
-				Si l'on regarde bien dans les listes, il est bien dedans. Je ne pouvais donc plus accéder aux statistiques de mes sites... <br/>
-				La solution est donc d’ajouter le domaine dans la Whitelist, c'est tout simple, il faut aller dans l'onglet Whitelist à gauche, puis taper le nom de domaine dans la barre 
+				Si l'on regarde bien dans les listes, il est bien dedans. Je ne pouvais donc plus accï¿½der aux statistiques de mes sites... <br/>
+				La solution est donc dï¿½ajouter le domaine dans la Whitelist, c'est tout simple, il faut aller dans l'onglet Whitelist ï¿½ gauche, puis taper le nom de domaine dans la barre 
 				et cliquer sur add
 			</p>
 			
